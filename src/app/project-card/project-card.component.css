@@ -1,0 +1,45 @@
+.btn{
+    border-radius: 8px;
+    background-color: rgb(121, 0, 226);
+    color: white;
+}
+.tag{
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 8px;
+    background-color: #00ffd5;
+    color: black;
+}
+.tag1 {
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 8px;
+    background-color: #4c9c86;
+    color: white;
+}
+.tag2 {
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 8px;
+    background-color: #8b2f99;
+    color: white;
+}
+.tag3 {
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 8px;
+    background-color:#3d69e3;
+    color: white;
+}
