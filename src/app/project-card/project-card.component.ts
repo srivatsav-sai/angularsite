@@ -1,7 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { Project } from '../_models/Project';
 import { NgFor } from '@angular/common';
-import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
 
 @Component({
@@ -11,16 +11,15 @@ import { ProjectModalComponent } from '../project-modal/project-modal.component'
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.css'
 })
-export class ProjectCardComponent {
-  // @Input() projectName: string = '';
-  // @Input() programUsed1: string = '';
-  // @Input() programUsed2: string = '';
-  // @Input() programUsed3: string = '';
-  @Input() project = {} as Project;
-  bsModalRef?: BsModalRef;
+export class ProjectCardComponent implements OnInit{
+  private modalService = inject(NgbModal);
 
-  constructor(private modalService: BsModalService){}
-  OpenProjectModal(){
-    this.bsModalRef = this.modalService.show(ProjectModalComponent);
+  @Input() project = {} as Project;
+
+  openProjectModal() {
+    const modalRef = this.modalService.open(ProjectModalComponent);
+    modalRef.componentInstance.project = this.project;
+  }
+  ngOnInit() {
   }
 }

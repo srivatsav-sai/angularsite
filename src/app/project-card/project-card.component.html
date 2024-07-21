@@ -2,16 +2,13 @@
     <div class="card-body">
         <h5 class="card-title">{{project.name}}</h5>
         <p class="card-text">{{project.summary}}</p>
-        <button class="btn" (click) = "OpenProjectModal()">Click for more</button>
+        <button class="btn" (click)="openProjectModal()">Click for more</button>
     </div>
     <div class="card-footer">
         <div class="d-flex flex-wrap justify-content-center">
             <div *ngFor="let tag of project.tags">
                 <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag}}</div>
             </div>
-            <!-- <div class="tag1 me-2 mb-1">{{programUsed1}}</div>
-            <div class="tag2 me-2 mb-1">{{programUsed2}}</div>
-            <div class="tag3 me-2 mb-1">{{programUsed3}}</div> -->
         </div>
     </div>
 </div>

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ProjectCardComponent } from "../project-card/project-card.component";
-import { Project } from '../_models/Project';
-import { Tag } from '../_models/Tag';
-import { NgFor } from '@angular/common';
 import { ProjectsService } from '../_services/projects.service';
+import { Project } from '../_models/Project';
+import { ProjectCardComponent } from "../project-card/project-card.component";
+import { NgFor } from '@angular/common';
+
 
 @Component({
   selector: 'app-portfolio',
@@ -17,10 +17,13 @@ export class PortfolioComponent implements OnInit{
 
   projects= {} as Project[];
 
+  isCollapsed: boolean = true;
+
   constructor(private titleService: Title, private projectService: ProjectsService){
     this.titleService.setTitle('Srivatsav - Portfolio');
   }
   ngOnInit(): void {
     this.projects = this.projectService.GetProjects();
+
   }
 }
