@@ -1,5 +1,10 @@
 .btn{
-    border-radius: 8px;
+    border-radius: 20px;
     background-color: rgb(121, 0, 226);
     color: white;
+}
+.tag{
+    border-radius: 15px;
+    height: 26px;
+    width: 100px;
 }

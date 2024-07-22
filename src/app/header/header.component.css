@@ -1,5 +1,13 @@
 .jumbotron {
     padding: 2rem 1rem;
-    background-color: rgb(255, 248, 147);
-    color: black;
+    background-color: #1a1b25;
+    color: white;
+    height: 20vh;
+    width: 100vw;
+}
+h1{
+    font-size: 6vh;
+}
+h3{
+    font-size: 3vh;
 }

@@ -10,7 +10,7 @@ export class ProjectsService {
   projects: Project[] = [
     {id: 0, 
       name: "Python Discord Bot",
-      myimage: "assets/myself.png", 
+      myimage: "assets/myself2.jpg", 
       pictures: ["assets/AngularPics/Screenshot 2024-07-21 170653.png",
         "assets/AngularPics/Screenshot 2024-07-21 170803.png",
         "assets/AngularPics/Screenshot 2024-07-21 170829.png"], 
