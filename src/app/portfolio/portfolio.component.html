@@ -1,14 +1,110 @@
 <div class="container">
     <div class="mb-2">
-        <div>
-            <button class="btn mb-2 me-2" (click) = "isCollapsed = !isCollapsed">Filter</button>
-        <!-- </div>
-            <div [collapsed]="isCollapsed" [isAnimated]="true">
-
-        </div> -->
+        <p>
+            <button 
+            type="button"
+            class="btn btn-outline-primary mb-2 me-2" 
+            (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample">Filter</button>
+            <button 
+            type="button"
+            class="btn btn-outline-secondary mb-2"
+            (click)="ResetFilters()"
+            [hidden]="!filtering"
+            style="color: white;">Reset</button>
+        </p>
+        <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+            <div class="border mb-3 shadow" style="width: 450px; background-color: white; border-radius: 7px;">
+                <form>
+                    <div class="row mx-0" style="color: black;">
+                        <div class="col">
+                            <b>Languages:</b>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "typescript"
+                                    (change)="Filter()"
+                                    name="Typescript">
+                                    <label class="form-check-label">TypeScript</label>
+                                </div>
+                                <div class="form-check">
+                                    <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "python"
+                                    (change)="Filter()"
+                                    name="Python">
+                                    <label class="form-check-label">Python</label>
+                                </div>
+                                <div class="form-check">
+                                    <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "css"
+                                    (change)="Filter()"
+                                    name="Css">
+                                    <label class="form-check-label">CSS</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" >
+                            <b>Frameworks:</b>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "angular"
+                                    (change)="Filter()"
+                                    name="Angular">
+                                    <label class="form-check-label">Angular</label>
+                                </div>
+                                <div class="form-check">
+                                    <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "bootstrap"
+                                    (change)="Filter()"
+                                    name="Bootstrap">
+                                    <label class="form-check-label">Bootstrap</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" >
+                            <b>Databases:</b>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "mongodb"
+                                    (change)="Filter()"
+                                    name="Mongodb">
+                                    <label class="form-check-label">MongoDB</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "firebase"
+                                    (change)="Filter()"
+                                    name="Firebase">
+                                    <label class="form-check-label">Firebase</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <div class="row">
-        <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4" style="max-width: 420px; min-width: 420px;">
+        <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4" style="max-width: 420px; min-width: 420px; padding: 10px;">
             <app-project-card [project] = "project"></app-project-card>
         </div>
     </div>
