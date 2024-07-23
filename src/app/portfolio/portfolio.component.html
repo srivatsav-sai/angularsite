@@ -3,7 +3,7 @@
         <p>
             <button 
             type="button"
-            class="btn btn-outline-primary mb-2 me-2" 
+            class="btn btn-outline-primary mb-2 me-2"
             (click)="isCollapsed = !isCollapsed"
             [attr.aria-expanded]="!isCollapsed"
             aria-controls="collapseExample">Filter</button>
@@ -104,7 +104,7 @@
         </div>
     </div>
     <div class="row">
-        <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4" style="max-width: 420px; min-width: 420px; padding: 10px;">
+        <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4">
             <app-project-card [project] = "project"></app-project-card>
         </div>
     </div>
