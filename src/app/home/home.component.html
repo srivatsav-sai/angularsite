@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row" >
-        <div class="card col-lg shadow border m-1">
+        <div class="card col-lg shadow border m-3">
             <div class="text-center">
                 <h2>About Me</h2>
-                <img src={{featuredProject.myimage}} alt="profile picture" width="256" height="256" class="rounded-circle">
+                <img src={{featuredProject.myimage}} alt="profile picture" width="320" height="320" class="rounded-circle">
                 <p style="text-align:justify">Versatile Junior Full Stack Developer with a solid foundation in JavaScript and its frameworks including 
                     React, Angular, and Node. Proficient in Kotlin with a track record of creating efficient, scalable, and 
                     maintainable code. Adaptable and solutions-focused, with a demonstrated history of contributing to 
@@ -11,7 +11,7 @@
                     growth.</p>
             </div>
         </div>
-        <div class="card col-lg shadow border m-1">
+        <div class="card col-lg shadow border m-3">
             <div class="text-center">
                 <h2>Featured Project</h2>
                 <h4>{{featuredProject.name}}</h4>
@@ -20,7 +20,7 @@
                 @for (picture of featuredProject.pictures; track picture) {
                     <ng-template ngbSlide>
                         <div class="picsum-img-wrapper">
-                            <img src={{picture}} alt="slide" style="display: block; width: 100%; height: 300px;">
+                            <img src={{picture}} alt="slide" style="display: block; height: 20rem; width: 100%;">
                         </div>
                     </ng-template>
                 }

@@ -15,7 +15,7 @@ export class ProjectsService {
         "assets/AngularPics/Screenshot 2024-07-21 170803.png",
         "assets/AngularPics/Screenshot 2024-07-21 170829.png"], 
       projectLink: "https://github.com/srivatsav-sai/CaleBot", 
-      summary: "Python bot made for Discord.", 
+      summary: "Python bot made for Discord while also using MongoDB.", 
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
       tags: [Tag.PYTHON, Tag.MONGODB]},
     {id: 1, 
@@ -25,7 +25,7 @@ export class ProjectsService {
         "assets/DiscordBot/Screenshot 2024-07-21 173815.png",
         "assets/DiscordBot/Screenshot 2024-07-21 173834.png"], 
       projectLink: "https://github.com/srivatsav-sai/angularsite", 
-      summary: "Front-End web app developed using Angular and TypeScript", 
+      summary: "Front-End web app developed using Angular and TypeScript.", 
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.BOOTSTRAP]},
     {id: 2, 
@@ -35,9 +35,9 @@ export class ProjectsService {
         "assets/DjangoPics/Screenshot 2024-07-21 174206.png",
         "assets/DjangoPics/Screenshot 2024-07-21 174236.png"], 
       projectLink: "https://github.com/srivatsav-sai/django-oas", 
-      summary: "Fullstack web app developed using Django", 
+      summary: "Fullstack web app developed using Django.", 
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
-      tags: [Tag.DJNAGO ,Tag.PYTHON, Tag.FIREBASE, Tag.CSS]}
+      tags: [Tag.DJANGO ,Tag.PYTHON, Tag.FIREBASE, Tag.CSS]}
   ];
 
   constructor() { }

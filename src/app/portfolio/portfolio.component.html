@@ -3,21 +3,36 @@
         <p>
             <button 
             type="button"
-            class="btn btn-outline-primary mb-2 me-2"
+            class="btn mb-2 me-2"
             (click)="isCollapsed = !isCollapsed"
             [attr.aria-expanded]="!isCollapsed"
-            aria-controls="collapseExample">Filter</button>
+            aria-controls="collapseExample"
+            style="background-color:#CCFCCB;
+            border-color: #027000;
+            border-width: 0.15rem;
+            border-radius: 2rem;
+            font-size: 1.5rem;
+            width: 6.25rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)"
+            >Filters</button>
             <button 
             type="button"
             class="btn btn-outline-secondary mb-2"
             (click)="ResetFilters()"
             [hidden]="!filtering"
-            style="color: white;">Reset</button>
+            style="background-color:#028b00;
+            border-color:  #CCFCCB;
+            border-width: 0.15rem;
+            border-radius: 2rem;
+            color: white;
+            font-size: 1.5rem;
+            width: 6.25rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)">Reset</button>
         </p>
         <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-            <div class="border mb-3 shadow" style="width: 450px; background-color: white; border-radius: 7px;">
+            <div class="border shadow">
                 <form>
-                    <div class="row mx-0" style="color: black;">
+                    <div class="row mx-0" style="color: white;">
                         <div class="col">
                             <b>Languages:</b>
                             <div class="form-group">

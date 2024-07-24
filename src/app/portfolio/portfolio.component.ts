@@ -60,7 +60,7 @@ export class PortfolioComponent implements OnInit{
       filterTags.push(Tag.BOOTSTRAP);
     }
     if(this.django){
-      filterTags.push(Tag.DJNAGO);
+      filterTags.push(Tag.DJANGO);
     }
     if(this.angular){
       filterTags.push(Tag.ANGULAR);

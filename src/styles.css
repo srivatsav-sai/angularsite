@@ -1,17 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
-body { 
+body {
     background-color: #bcd8ff;
- }
+}
+b{
+    font-size: 1.75rem;
+}
 .card{
     background-color: rgb(232, 244, 255);
-    max-height: 60rem;
+    border-radius: 1rem;
+    max-height: 1000rem;
     min-height: 30rem;
+    padding: 1.5rem;
 }
 .card-body{
     padding-bottom: 0rem;
 }
 .card-footer{
-    height: 6.4rem;
+    min-height: 6.4rem;
 }
 .card-text{
     font-size: 1.5rem;
@@ -22,10 +26,29 @@ body {
 }
 .col-lg-4{
     padding: 3rem 0.75rem;
-    width: 33rem;
+    width: 30rem;
 }
 .container {
-    max-width: 100rem;
+    max-width: 90rem;
+}
+.form-check{
+    font-size: 1.5rem;
+}
+.form-check-input{
+    border-radius: 0.5rem !important;
+}
+.form-check-input:checked{
+    background-color: #242852;
+}
+h2{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 1.75rem;
+    padding-top: 1.5rem;
+}
+img{
+    padding: 1.5rem;
 }
 .jumbotron {
     background-color: #1a1b25;
@@ -33,12 +56,22 @@ body {
     height: 20rem;
     padding: 5.5rem 1rem;
 }
+.modal-content{
+    margin-left: -15rem;
+    width: 60rem;
+}
+.modal-header{
+    padding: 1rem 1.5rem;
+}
 .navbar-expand-md{
     background-color:rgb(232, 244, 255);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 p{
     font-size: 1.5rem;
+}
+.picsum-img-wrapper{
+    height: 20rem;
 }
 .row{
     padding: 0rem;
@@ -47,5 +80,6 @@ p{
     border-radius: 2rem;
     height: 2.5rem;
     font-size: 1.5rem;
+    text-align: center;
     width: 9rem;
 }

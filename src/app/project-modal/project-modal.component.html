@@ -8,8 +8,8 @@
     <ngb-carousel>
         @for (picture of project.pictures; track picture) {
             <ng-template ngbSlide>
-                <div class="picsum-img-wrapper">
-                    <img src={{picture}} alt="slide" style="display: block; width: 100%;">
+                <div class="picsum-img-wrapper" style="height: 35rem;">
+                    <img src={{picture}} alt="slide" style="display: block; height: 35rem; width: 100%;">
                 </div>
             </ng-template>
         }

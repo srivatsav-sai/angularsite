@@ -1,15 +1,23 @@
 <div class="container text-center">
-    <button class="btn btn-primary mb-5 shadow border" (click)="DownloadPDF()">Download Resume PDF</button>
+    <button class="btn mb-5" 
+    (click)="DownloadPDF()"
+    style="background-color:#e2d8ff;
+            border-color: #390084;
+            border-width: 0.15rem;
+            border-radius: 2rem;
+            font-size: 1.5rem;
+            width: 20rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)">Download Resume PDF</button>
     <div class="pb-2">
         <div ngbAccordion #accordion="ngbAccordion" class="shadow">
             <div ngbAccordionItem="first">
                 <h2 ngbAccordionHeader>
-                    <button ngbAccordionButton>
+                    <button ngbAccordionButton style="background-color:#ece6ff; height: 5rem;">
                         <span><b>Work Experience</b></span>
                     </button>
                 </h2>
                 <div ngbAccordionCollapse>
-                    <div ngbAccordionBody>
+                    <div ngbAccordionBody style="background-color:rgb(232, 244, 255);">
                         <ng-template>
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
                             officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -23,12 +31,12 @@
             </div>
             <div ngbAccordionItem="second">
                 <h2 ngbAccordionHeader>
-                    <button ngbAccordionButton>
+                    <button ngbAccordionButton style="background-color:#ece6ff; height: 5rem;">
                         <span><b>Skills</b></span>
                     </button>
                 </h2>
                 <div ngbAccordionCollapse>
-                    <div ngbAccordionBody>
+                    <div ngbAccordionBody style="background-color:rgb(232, 244, 255);">
                         <ng-template>
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
                             officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -42,12 +50,12 @@
             </div>
             <div ngbAccordionItem="third">
                 <h2 ngbAccordionHeader>
-                    <button ngbAccordionButton>
+                    <button ngbAccordionButton style="background-color:#ece6ff; height: 5rem;">
                         <span><b>Certificates</b></span>
                     </button>
                 </h2>
                 <div ngbAccordionCollapse>
-                    <div ngbAccordionBody>
+                    <div ngbAccordionBody style="background-color:rgb(232, 244, 255);">
                         <ng-template>
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
                             officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -61,12 +69,12 @@
             </div>
             <div ngbAccordionItem="fourth">
                 <h2 ngbAccordionHeader>
-                    <button ngbAccordionButton>
+                    <button ngbAccordionButton style="background-color:#ece6ff; height: 5rem;">
                         <span><b>Education</b></span>
                     </button>
                 </h2>
                 <div ngbAccordionCollapse>
-                    <div ngbAccordionBody>
+                    <div ngbAccordionBody style="background-color:rgb(232, 244, 255);">
                         <ng-template>
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
                             officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -80,12 +88,46 @@
             </div>
         </div>
         <hr/>
-        <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.toggle('first')" [hidden]="true">Toggle first</button>
-        <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.toggle('second')" [hidden]="true">Toggle second</button>
-        <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.toggle('third')" [hidden]="true">Toggle second</button>
-        <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.toggle('fourth')" [hidden]="true">Toggle second</button>
-        <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.expandAll()">Expand all</button>
-        <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.collapseAll()">Collapse all</button>
+        <button class="btn btn-sm btn-outline-primary me-2" 
+        (click)="accordion.toggle('first')" 
+        [hidden]="true"
+        style="background-color:#e2d8ff;
+            border-color: #390084;
+            border-width: 0.15rem;
+            border-radius: 2rem;
+            font-size: 1.5rem;
+            width: 20rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)">Toggle first</button>
+        <button class="btn btn-sm btn-outline-primary me-2" 
+        (click)="accordion.toggle('second')" 
+        [hidden]="true"
+        >Toggle second</button>
+        <button class="btn btn-sm btn-outline-primary me-2" 
+        (click)="accordion.toggle('third')" 
+        [hidden]="true">Toggle second</button>
+        <button class="btn btn-sm btn-outline-primary me-2" 
+        (click)="accordion.toggle('fourth')" 
+        [hidden]="true">Toggle second</button>
+        <button class="btn btn-sm btn-outline-primary me-2" 
+        (click)="accordion.expandAll()"
+        style="background-color:#e2d8ff;
+            border-color: #390084;
+            border-width: 0.15rem;
+            border-radius: 2rem;
+            color: black;
+            font-size: 1rem;
+            width: 7rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)">Expand all</button>
+        <button class="btn btn-sm btn-outline-primary me-2" 
+        (click)="accordion.collapseAll()"
+        style="background-color:#e2d8ff;
+            border-color: #390084;
+            border-width: 0.15rem;
+            border-radius: 2rem;
+            color: black;
+            font-size: 1rem;
+            width: 7rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)">Collapse all</button>
     </div>
     
 </div>
