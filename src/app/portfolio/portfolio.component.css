@@ -1,11 +1,12 @@
 .container{
-    padding-top: 2.5rem;
+    padding-top: 2.25rem;
 }
 .border{
-    background-color: #6153CC;
-    border-color: #9081ff !important;
+    background-color: #cefffc;
+    border-color: #00776f !important;
     border-radius: 0.75rem;
-    border-width: 0.35rem !important;
+    border-width: 0.15rem !important;
+    color: black;
     padding: 1rem;
-    width: 45rem;
+    width: 43.75rem;
 }

@@ -7,8 +7,8 @@
             (click)="isCollapsed = !isCollapsed"
             [attr.aria-expanded]="!isCollapsed"
             aria-controls="collapseExample"
-            style="background-color:#CCFCCB;
-            border-color: #027000;
+            style="background-color:#b9fffa;
+            border-color: #00776f;
             border-width: 0.15rem;
             border-radius: 2rem;
             font-size: 1.5rem;
@@ -20,8 +20,8 @@
             class="btn btn-outline-secondary mb-2"
             (click)="ResetFilters()"
             [hidden]="!filtering"
-            style="background-color:#028b00;
-            border-color:  #CCFCCB;
+            style="background-color:#00776f;
+            border-color:  #b9fffa;
             border-width: 0.15rem;
             border-radius: 2rem;
             color: white;
@@ -32,7 +32,7 @@
         <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
             <div class="border shadow">
                 <form>
-                    <div class="row mx-0" style="color: white;">
+                    <div class="row mx-0">
                         <div class="col">
                             <b>Languages:</b>
                             <div class="form-group">

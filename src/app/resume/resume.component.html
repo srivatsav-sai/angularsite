@@ -1,10 +1,11 @@
 <div class="container text-center">
     <button class="btn mb-5" 
     (click)="DownloadPDF()"
-    style="background-color:#e2d8ff;
-            border-color: #390084;
+    style="background-color:#fffeb9;
+            border-color: #777300;
             border-width: 0.15rem;
             border-radius: 2rem;
+            color: black;
             font-size: 1.5rem;
             width: 20rem;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)">Download Resume PDF</button>
@@ -12,7 +13,7 @@
         <div ngbAccordion #accordion="ngbAccordion" class="shadow">
             <div ngbAccordionItem="first">
                 <h2 ngbAccordionHeader>
-                    <button ngbAccordionButton style="background-color:#ece6ff; height: 5rem;">
+                    <button ngbAccordionButton style="background-color:#fff75e; height: 5rem;">
                         <span><b>Work Experience</b></span>
                     </button>
                 </h2>
@@ -31,7 +32,7 @@
             </div>
             <div ngbAccordionItem="second">
                 <h2 ngbAccordionHeader>
-                    <button ngbAccordionButton style="background-color:#ece6ff; height: 5rem;">
+                    <button ngbAccordionButton style="background-color:#fff990; height: 5rem;">
                         <span><b>Skills</b></span>
                     </button>
                 </h2>
@@ -50,7 +51,7 @@
             </div>
             <div ngbAccordionItem="third">
                 <h2 ngbAccordionHeader>
-                    <button ngbAccordionButton style="background-color:#ece6ff; height: 5rem;">
+                    <button ngbAccordionButton style="background-color:#fffab3; height: 5rem;">
                         <span><b>Certificates</b></span>
                     </button>
                 </h2>
@@ -69,7 +70,7 @@
             </div>
             <div ngbAccordionItem="fourth">
                 <h2 ngbAccordionHeader>
-                    <button ngbAccordionButton style="background-color:#ece6ff; height: 5rem;">
+                    <button ngbAccordionButton style="background-color:#ffffd6; height: 5rem;">
                         <span><b>Education</b></span>
                     </button>
                 </h2>
@@ -91,13 +92,7 @@
         <button class="btn btn-sm btn-outline-primary me-2" 
         (click)="accordion.toggle('first')" 
         [hidden]="true"
-        style="background-color:#e2d8ff;
-            border-color: #390084;
-            border-width: 0.15rem;
-            border-radius: 2rem;
-            font-size: 1.5rem;
-            width: 20rem;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)">Toggle first</button>
+        >Toggle first</button>
         <button class="btn btn-sm btn-outline-primary me-2" 
         (click)="accordion.toggle('second')" 
         [hidden]="true"
@@ -110,8 +105,8 @@
         [hidden]="true">Toggle second</button>
         <button class="btn btn-sm btn-outline-primary me-2" 
         (click)="accordion.expandAll()"
-        style="background-color:#e2d8ff;
-            border-color: #390084;
+        style="background-color:#fffeb9;
+            border-color: #777300;
             border-width: 0.15rem;
             border-radius: 2rem;
             color: black;
@@ -120,8 +115,8 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)">Expand all</button>
         <button class="btn btn-sm btn-outline-primary me-2" 
         (click)="accordion.collapseAll()"
-        style="background-color:#e2d8ff;
-            border-color: #390084;
+        style="background-color:#fffeb9;
+            border-color: #777300;
             border-width: 0.15rem;
             border-radius: 2rem;
             color: black;

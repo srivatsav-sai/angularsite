@@ -1,3 +1,7 @@
+.accordion-item:first-child .accordion-button{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
 body {
     background-color: #bcd8ff;
 }
@@ -6,7 +10,9 @@ b{
 }
 .card{
     background-color: rgb(232, 244, 255);
+    border-color: #243189 !important;
     border-radius: 1rem;
+    border-width: 0.15rem !important;
     max-height: 1000rem;
     min-height: 30rem;
     padding: 1.5rem;
@@ -16,6 +22,7 @@ b{
 }
 .card-footer{
     min-height: 6.4rem;
+    background-color: rgb(232, 244, 255);
 }
 .card-text{
     font-size: 1.5rem;
@@ -25,7 +32,7 @@ b{
     font-size: 2.5rem;
 }
 .col-lg-4{
-    padding: 3rem 0.75rem;
+    padding: 2.5rem 0.75rem;
     width: 30rem;
 }
 .container {
@@ -51,10 +58,18 @@ img{
     padding: 1.5rem;
 }
 .jumbotron {
-    background-color: #1a1b25;
+    background-color: #0e1022;
     color: white;
     height: 20rem;
     padding: 5.5rem 1rem;
+}
+.list-group-item{
+    background-color: rgb(232, 244, 255);
+    border-color: #243189 !important;
+    border-width: 0.2rem;
+}
+.list-group-item-action:hover{
+    background-color: #bcd8ff;
 }
 .modal-content{
     margin-left: -15rem;
