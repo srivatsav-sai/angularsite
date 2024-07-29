@@ -1,3 +1,15 @@
 .btn-close{
-    margin-right: 1.5rem;
+    margin-right: 1rem;
+}
+.d-flex{
+    padding-top: 0rem;
+}
+img{
+    height: 3rem; 
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    width: 2.5rem; 
+}
+.tag{
+    padding-top: 1rem;
 }

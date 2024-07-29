@@ -8,8 +8,8 @@
     <ngb-carousel>
         @for (picture of project.pictures; track picture) {
             <ng-template ngbSlide>
-                <div class="picsum-img-wrapper" style="height: 35rem;">
-                    <img src={{picture}} alt="slide" style="display: block; height: 35rem; width: 100%;">
+                <div class="picsum-img-wrapper" style="height: 40rem;">
+                    <img src={{picture}} alt="slide" style="display: block; height: 40rem; width: 100%;">
                 </div>
             </ng-template>
         }
@@ -19,8 +19,9 @@
     <p>You can find this project on GitHub <a href={{project.projectLink}} target="_blank">here</a></p>
     <hr>
     <div class="d-flex flex-wrap">
+        <img src="/assets/tag.png" class="flex-shrink-0">
         <div *ngFor="let tag of project.tags">
-            <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag}}</div>
+            <div class="tag me-2 mb-1" [style.color]="tag.color">{{tag}}</div>
         </div>
     </div>
 </div>

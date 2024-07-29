@@ -12,16 +12,16 @@ b{
     background-color: rgb(232, 244, 255);
     border-color: #243189 !important;
     border-radius: 1rem;
-    border-width: 0.15rem !important;
+    border-width: 0.2rem !important;
     max-height: 1000rem;
-    min-height: 30rem;
+    min-height: 35rem;
     padding: 1.5rem;
 }
 .card-body{
     padding-bottom: 0rem;
 }
 .card-footer{
-    min-height: 6.4rem;
+    min-height: 9rem;
     background-color: rgb(232, 244, 255);
 }
 .card-text{
@@ -48,14 +48,17 @@ b{
     background-color: #242852;
 }
 h2{
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+}
+h3{
+    font-size: 2.25rem;
 }
 h4{
-    font-size: 1.75rem;
+    font-size: 2rem;
     padding-top: 1.5rem;
 }
-img{
-    padding: 1.5rem;
+h5{
+    font-size: 1.5rem;
 }
 .jumbotron {
     background-color: #0e1022;
@@ -63,20 +66,37 @@ img{
     height: 20rem;
     padding: 5.5rem 1rem;
 }
+.list-group{
+    margin: 0rem 18rem;
+    width: 25rem;
+}
 .list-group-item{
     background-color: rgb(232, 244, 255);
     border-color: #243189 !important;
     border-width: 0.2rem;
+    width: 25rem;
 }
 .list-group-item-action:hover{
     background-color: #bcd8ff;
 }
+.mb-2{
+    margin-bottom: 0rem !important;
+}
+.modal-body{
+    padding: 2rem 4rem;
+}
 .modal-content{
-    margin-left: -15rem;
-    width: 60rem;
+    background-color: rgb(232, 244, 255);
+    border-color:#243189;
+    border-radius: 1rem;
+    border-width: 0.2rem;
+    margin-left: -29rem;
+    margin-top: 6.5rem;
+    min-height: 60rem;
+    width: 90rem;
 }
 .modal-header{
-    padding: 1rem 1.5rem;
+    padding: 2rem 4rem;
 }
 .navbar-expand-md{
     background-color:rgb(232, 244, 255);
@@ -86,15 +106,14 @@ p{
     font-size: 1.5rem;
 }
 .picsum-img-wrapper{
-    height: 20rem;
+    height: 19rem;
 }
 .row{
     padding: 0rem;
 }
 .tag{
-    border-radius: 2rem;
-    height: 2.5rem;
     font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
     text-align: center;
-    width: 9rem;
 }

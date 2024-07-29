@@ -3,5 +3,9 @@ b{
 }
 .container{
     padding-top: 2.5rem;
-    width: 60rem;
+    width: 75rem;
+}
+ul{
+    font-size: 1.6rem;
+    padding-left: 2.35rem;
 }

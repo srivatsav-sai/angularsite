@@ -1,6 +1,6 @@
 .container{
     padding-top: 2.5rem;
-    width: 60rem;
+    width: 62rem;
 }
 h1{
     font-size: 3rem;
@@ -8,11 +8,12 @@ h1{
 }
 h3{
     padding-top: 1.75rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .text-center{
     padding: 1.5rem 0rem;
     background-color: rgb(232, 244, 255);
     border-color: #243189 !important;
     border-width: 0.2rem !important;
+    width: 60rem;
 }
